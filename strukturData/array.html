@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray = ['wahyu', 'arif', 'kurniawan wahyu', 27, 1995];
+        console.log(myArray[0]);
+        console.log('panjang array '+myArray.length);
+        // tambah data di urutan terahir array
+        myArray.push('banjarnegara');
+        console.log('panjang array '+myArray.length);
+        console.log(myArray);
+        // keluarkan data dari urutan terakhir
+        myArray.pop();
+        console.log(myArray);
+        /*
+            metode lain untuk memanipulasi data
+            - shift(), untuk mengeluarkan element pertama
+            - unshift(), untuk menambah data di awal array
+        */
+       myArray.shift();
+       console.log(myArray);
+       myArray.unshift('wahyu wahyu wahyu');
+       console.log(myArray);
+       delete myArray[0];
+       console.log(myArray);
+    //    menghapus index 2, 2 element artinya index 2 dan 3(2 elemen) akan terhapus
+       myArray.splice(2, 2);
+    </script>
+</body>
+</html>

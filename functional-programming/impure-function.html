@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>impure functional and pure</title>
+</head>
+<body>
+    <script>
+        let pi = 3.14;
+        const hitungLingkarang = (jari) => {
+            return pi * (jari * jari);
+        }
+        console.log(hitungLingkarang(4));
+        //disebut impure karena function bergantung pada pi yang terletak diluar block function
+
+        // contoh pure function, dilarang mempengaruhi nilai dari fungsi lain no side effect
+
+        const jumlahLuasLingkaran = (jari2) => {
+            return 3.14 * (jari2);
+        }
+        console.log(jumlahLuasLingkaran(5));
+        console.log(jumlahLuasLingkaran(8));
+    </script>
+    
+</body>
+</html>

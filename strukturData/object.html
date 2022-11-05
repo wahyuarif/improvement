@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myObjek = {
+            fistname: 'wahyu',
+            'language': 'indonesia',
+            'name': 'wahyu arif kurniawan',
+        }
+        console.log(`${myObjek.fistname}`);
+        console.log(`${myObjek['name']}`);
+        myObjek.fistname = 'wahyuuuuuuuuuuuu';
+        myObjek['language'] = 'English';
+        console.log(myObjek);
+        // variable const tapi bisa di ubah nilainya? karena tidak di inisiasi ulang, tidak terikat dengan properti di dalamnya.
+        // ini dibawah akan error, karena menginisiasi kembali
+        // myObjek = { firstname: "New Millenium Falcon" }; // Error
+
+        delete myObjek['name'];
+        console.log(myObjek);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spread menyebarkan nilai pada array
+        const favoriteFood = ['seafood', 'fruit', 'salad'];
+        const coutny = ['indonesia', 'malaysia', 'filipina', 'kamboja', 'laos'];
+        const allArray = [favoriteFood, coutny];
+        console.log(...favoriteFood);
+        // sama dengan
+        console.log(favoriteFood[0], favoriteFood[1], favoriteFood[2]);
+        //menggabung dua array
+        console.log(allArray);
+        // spread operator, mengabung array jadi satu
+        const tes = [...favoriteFood, ...coutny];
+        console.log(tes);
+        // object literal, membuat objek jadi ringkas
+        const myObj  = {firstName: 'wahyu', midleName:'arif', lastName:'kurniawan'};
+        const myObj2 = {contry: 'indonesia', street: 'jl. masjid no 13 kauman utara wonosobo', zip: 56311};
+        const gabung = {...myObj, ...myObj2};
+        console.log(gabung);
+    </script>
+</body>
+</html>
